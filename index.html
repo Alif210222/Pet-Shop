@@ -23,10 +23,53 @@
         .font2{
             font-family: "Sora";
         }
+
+        @media screen and (max-width:552px){
+               .hide{
+                display: none;
+               } 
+        }
     </style>
 
 </head>
 <body>
+    <header class=" ">
+        <!-- nav section -->
+        <nav class=" flex justify-between items-center px-5 lg:px-28 bg-[#FFF9F4] py-4">
+            <!-- nav-logo -->
+            <div class="flex items-center gap-2 text-[1.62rem]">
+                 <img src="c1-assets/logo-header.png" alt="logo">
+                <h1 class="hide font2"> Browse<span class="text-[#FFDC26]">4</span> Pets</h1>
+            </div>
+             <!-- nav menu -->
+              <div class="hide">
+                <ul class="flex gap-[32px]">
+                    <li><a href="" class="font2 text-xl">Find a Pet</a></li>
+                    <li><a href="" class="font2 text-xl">Breeds</a></li>
+                   
+                    <li><a href="" class="font2 text-xl">Contact Us</a></li>
+                   
+                </ul>
+              </div>
+                
+
+           <!-- nav-button -->
+            <div class=" hide space-x-5">
+                <i class="fa-solid fa-bell"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <button class="border border-yellow-400 px-6 py-2 rounded-lg text-xl">Login</button>
+                <button class="px-6 py-2 rounded-lg bg-[#FFDC26] text-xl">Register</button>
+
+            </div>
+
+            <div class=" lg:hidden text-2xl">
+                <i class="fa-solid fa-bars" ></i>
+            </div>
+            
+
+        </nav>
+    </header>
     
     
 </body>
