@@ -23,6 +23,33 @@
         .font2{
             font-family: "Sora";
         }
+        .bg-image{
+            background-image: url(c1-assets/cat-big.png);
+            background-repeat: no-repeat;
+            background-position: bottom;
+            
+        }
+
+        /* .animated-text {
+            content:"";
+            position: absolute;
+            
+            
+            height: 100%;
+           
+            background-color: white;
+            border-left: rgba(3, 9, 82, 0.784);
+            font-weight: bold;
+            animation: animate 4s infinite ;
+        } */
+        /* @keyframes animate{
+            40%,60%{
+                left:100%;
+            }
+            100%{
+                left: 0%;
+            }
+        } */
 
         @media screen and (max-width:552px){
                .hide{
@@ -33,7 +60,7 @@
 
 </head>
 <body>
-    <header class=" ">
+    <header class="">
         <!-- nav section -->
         <nav class=" flex justify-between items-center px-5 lg:px-28 bg-[#FFF9F4] py-4">
             <!-- nav-logo -->
@@ -44,17 +71,17 @@
              <!-- nav menu -->
               <div class="hide">
                 <ul class="flex gap-[32px]">
-                    <li><a href="" class="font2 text-xl">Find a Pet</a></li>
-                    <li><a href="" class="font2 text-xl">Breeds</a></li>
+                    <li><a href="#" class="font2 text-xl">Find a Pet</a></li>
+                    <li><a href="#" class="font2 text-xl">Breeds</a></li>
                    
-                    <li><a href="" class="font2 text-xl">Contact Us</a></li>
+                    <li><a href="#" class="font2 text-xl">Contact Us</a></li>
                    
                 </ul>
               </div>
                 
 
            <!-- nav-button -->
-            <div class=" hide space-x-5">
+            <div class=" hide space-x-3">
                 <i class="fa-solid fa-bell"></i>
                 <i class="fa-solid fa-magnifying-glass"></i>
 
@@ -69,7 +96,31 @@
             
 
         </nav>
+
+        <!-- banner section -->
+
+        <banner >
+            <!-- banner container -->
+               <div class="container mx-auto mt-10 border px-4 border-black bg-image bg-contain lg:h-[740px] h-[500px]"> 
+                <div class="space-y-6 ">
+                    <h1 class="lg:text-6xl text-5xl font1 text-black lg:w-[670px] ">Pamper Your Pet, Because They Deserve the Bes</h1> 
+                    <p class="text-black text-xl font2 lg:w-[670px] w-full relative">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and <span class=""> make tails wag with joy!</span></p>
+
+                    <button class="px-6 py-2 rounded-lg bg-[#FFDC26] text-xl">Find a pet</button>
+                </div>
+                         
+                 
+
+               </div>
+        </banner>
+
     </header>
+
+    <!-- main section -->
+     <main class="container mx-auto">
+        <!-- categorie section -->
+
+     </main>
     
     
 </body>
