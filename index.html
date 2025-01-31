@@ -29,30 +29,43 @@
             background-position: bottom;
             
         }
-        
 
-
+        .animation:before{
+            content:'To good Fit.';
+            animation: animate 10s infinite;
+        }
         
-        /* .animated-text {
-            content:"";
-            position: absolute;
+         @keyframes animate{
+            0%{
+              opacity: 1; 
+            }
+            25%{
+               opacity: 0; 
+
+            }
+
+            50%{
+              opacity: 1;  
+              content: 'To make healty.' ;
             
-            
-            height: 100%;
+            }
+
+            65%{
+               opacity: 0; 
+            }
+
+            80%{
+                opacity: 1;
+            }
+
+            99%{
+              opacity: 1; 
+              content: 'Be a good friend.'; 
+            }
            
-            background-color: white;
-            border-left: rgba(3, 9, 82, 0.784);
-            font-weight: bold;
-            animation: animate 4s infinite ;
-        } */
-        /* @keyframes animate{
-            40%,60%{
-                left:100%;
-            }
-            100%{
-                left: 0%;
-            }
-        } */
+        } 
+
+
 
         @media screen and (max-width:552px){
                .hide{
@@ -107,12 +120,19 @@
 
         <banner >
             <!-- banner container -->
-               <div class="container mx-auto mt-10  px-4  bg-image bg-contain lg:h-[730px] h-[500px]"> 
-                <div class="space-y-6 ">
+               <div class="container mx-auto mt-10  px-4  bg-image bg-contain lg:h-[730px] h-[570px]"> 
+                <div class="space-y-5 ">
                     <h1 class="lg:text-6xl text-5xl font1 text-black lg:w-[670px] ">Pamper Your Pet, Because They Deserve the Bes</h1> 
                     <p class="text-black text-xl font2 lg:w-[670px] w-full relative">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and <span class=""> make tails wag with joy!</span></p>
 
                     <button class="px-6 py-2 rounded-lg bg-[#FFDC26] font2 text-xl">Find a pet</button>
+                     <div class="">
+                        <h1 class="font1  lg:text-2xl">Take care of your pet 
+                             <span class="lg:text-4xl tetx-xl animation text-[#f7e242]"></span> </h1>
+                     </div>
+                     
+                   
+                   
                 </div>
                          
                  
